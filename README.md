@@ -63,7 +63,7 @@ Exercises are divided into three categories:
 - Foundation -> Exercises based on the foundations of promises and their implementation, and common helpers.
 
 > [!IMPORTANT]
-> There isn't an specific order for categories, you can start from any of them and switch to another one even before finishing the other one completely. Howerer, the exercises have different [levels](#levels) that will be discussed next.
+> There isn't an specific order for categories, you can start from any of them and switch to another one even before finishing the other one completely. However, the exercises have different [levels](#levels) that will be discussed next.
 
 Exercises are located within `src/exercises/<category>` folders, where `<category>` is one of the categories mentioned above.
 
@@ -76,7 +76,7 @@ To solve an exercise, you need to edit the `src/exercises/<category>/<exercise>/
 After solving an exercise, you may check your solution by running:
 
 ```sh
-npm run check <category>/<exercise>.test.ts
+npm run check <category>/<exercise>
 ```
 
 Tests are located within `src/tests`.
@@ -244,7 +244,7 @@ In this graph, we have task `B` which depends on `A`'s fulfillment and task `C` 
 
 This means that `B` can only start after `A` has been fulfilled and `C` can only start after `A` has been rejected.
 
-As only one of these outcomes is possible, either `B` or `C` will not be carried out.
+As only one of these outcomes is possible, either `B` or `C` will be carried out.
 
 Corresponding implementation:
 
